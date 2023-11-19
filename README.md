@@ -1,4 +1,11 @@
+# GITHUB INDICATORS
+
+![GitHub Repo stars](https://img.shields.io/github/stars/Faatiimae/Resto?style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/Faatiimae/Resto?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Faatiimae/Resto?style=for-the-badge)
+
 # Resto
+Hello, I createdr Restaurant page with HTML and CSS tags.
 
 ## ## RULES OF USE
 
@@ -14,8 +21,7 @@
 
 This project was developed using the following technologies
  
-| No | Technique | Purpose |
-| - | ---------- | --------------------- |
+| No | Technique | Purpose | 
 | 1 | HTML | Building a project skeleton |
 | 2 | CSS |  Make-up of the established skeleton |
 | 3 | GIT |  Project version control management |
