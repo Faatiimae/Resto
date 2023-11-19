@@ -9,7 +9,7 @@ Hello, I createdr Restaurant page with HTML and CSS tags.
 
 ## ## RULES OF USE
 
-> *STEP-1:* `https://github.com/Faatiimae/Resto.git` <br/>
+> *STEP-1:*  'https://github.com/Faatiimae/Resto.git' <br/>
 > *STEP-2:*  enter the `Resto` folder that appears <br/>
 > *STEP-3:*  open the folder you are in in a text editor <br/>
 > *STEP-4:*  run the  all the`index.html` files in the main folder <br/>
