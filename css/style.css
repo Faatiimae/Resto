@@ -1,0 +1,773 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 0;
+}
+::-webkit-scrollbar-thumb{
+    background: #EEEEEE;
+    border-radius: 5px;
+}
+ 
+nav{
+    width: 100%;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(209, 206, 206);
+}
+nav .title{
+    width: 20%;
+    height: 60px;
+    text-align: right; 
+}
+.title p{
+    font-size: 23px;
+    font-weight: 800;
+    color: #202B5B;
+    padding-top: 14px;
+}
+p i{
+    color:#25b976;
+    padding-right: 4px; 
+}
+nav .nav{
+    width: 65%;
+    height: 60px;
+}
+
+.nav ul{
+    display:inline-flex;
+    list-style-type: none;
+    margin-left: 200px;
+}
+.nav ul li{ 
+    margin: 20px 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #202B5B; 
+}
+.nav ul li:hover{
+    background: #25b976;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px; 
+}
+ 
+nav .icon{
+    width: 25%;
+    height: 60px;
+}
+
+.icon i{
+    width: 37px;
+    height: 37px;
+    background:#F1EFF1;
+    margin-top: 10px;
+    margin-left: 5px; 
+    padding: 10px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+    color: #202B5B;
+    text-align: center; 
+}
+.container{
+    width: 100%;
+    height: 540px; 
+    overflow-y: hidden;
+}
+
+.container .cards{
+    width: 280%;
+    height: 540px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    height: 540px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+ 
+.card .image{
+    height: 540px;
+    width: 45%;
+    background-image: url(../img/PHOTO-2023-10-13-20-43-53.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card .image2{
+    height: 540px;
+    width: 45%;
+    background-image: url(../img/friedchicken.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .image3{
+    height: 540px;
+    width: 45%;
+    background-image: url(../img/hotpizza.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-details{
+    height: 540px;
+    width: 55%;
+    background: #F7F7F7;
+    padding-top: 160px; 
+    padding-left: 30px;
+}
+.food-details span{
+    font-size: 20px;
+    color:  #25b976;
+    font-weight: 500;
+}
+
+.food-details h1{
+    font-size: 45px;
+    color: #202B5B;
+    padding-top: 5px;
+}
+
+.food-details p{
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.food-details button{
+    width: 120px;
+    height: 30px;
+    background: #202B5B;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    border: none;
+}
+button:hover{
+    background: #25b976;
+    width: 140px;
+}
+ 
+.populardishes{
+    width: 100%;
+    height: 650px;
+    background: #F1EFF1;
+    position: relative;
+    text-align: center;
+}
+.populardishes p{
+    color: #25b976;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+}
+.populardishes h2{
+    color: #202B5B;
+    padding-bottom: 10px;
+}
+.populardishes .main-dishes{
+    width: 70%;
+    height: 550px;
+    background: #F1EFF1; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.dish{
+    width: calc(100% / 4);
+    height: 250px;
+    background: #F7F7F7;
+    box-shadow: 1px 1px 10px 1px rgb(194, 193, 193);
+}
+
+.dish .image{
+    width: 190px;
+    height: 120px;
+    object-fit: cover;
+    background-image: url(../img/burger.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px; 
+    margin-top: 15px;  
+}
+
+
+
+.dish .nuggets{
+    background-image: url(../img/chic.jpg);
+}
+
+.dish .chicken{
+    background-image: url(../img/chiken.jpg);
+}
+
+.dish .pizza{
+    background-image: url(../img/pizza.jpg);
+}
+
+.dish .cookie{
+    background-image: url(../img/cookie.jpg);
+}
+
+.dish .rolls{
+    background-image: url(../img/chrol.jpg);
+}
+
+.image .fa-eye{
+    width: 37px;
+    height: 37px;
+    background:#F1EFF1; 
+    padding: 10px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+    color: #202B5B;
+    text-align: center; 
+    cursor: pointer;
+    margin-right: 110px;
+    margin-top: 10px; 
+}
+
+.image .fa-heart{
+    width: 37px;
+    height: 37px;
+    background:#F1EFF1;
+    margin-top: 10px;
+    padding: 10px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+    color: #202B5B;
+    text-align: center; 
+    cursor: pointer;
+}
+
+.dish .about-dish{
+    background: #F7F7F7;
+}
+
+.about-dish h3{
+    color: #202B5B;
+    padding-top: 8px;
+}
+
+.about-dish i{
+    color: #25b976;
+    padding-top: 5px;
+} 
+.about-dish p{
+    color: #25b976;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.about-dish button{
+    width: 130px;
+    height: 28px;
+    background: #202B5B;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.about-dish button:hover{
+    width: 140px;
+    background: #25b976;
+}
+
+
+.about-us{
+    height: 590px;
+    width: 100%;
+    background: #F7F7F7;
+    text-align: center;
+}
+.about-us p{
+    color: #25b976;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+}
+.about-us h2{
+    color: #202B5B;
+}
+
+.main{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main img{
+    object-fit: cover;
+}
+.main .services{
+    width: 60%;
+    background: #F7F7F7;
+    height: 500px;
+    text-align: left;
+    padding-top: 120px;
+    color: #202B5B;
+    font-size: 18px;
+}
+.services h1{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.services button{
+    width: 200px;
+    height: 45px;
+    background: #EEEEEE;
+    color: #202B5B;
+    font-weight: 600;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 1px rgb(194, 193, 193);
+    margin-top: 20px;
+}
+.services .button{
+    width: 140px;
+    height: 30px;
+    background: #202B5B;
+    color: white;
+}
+
+.services .button:hover{
+    width: 160px;
+    background: #25b976;
+}
+ 
+button i{
+    color: #25b976;
+    font-size: 20px;
+    padding-right: 5px; 
+}
+.menu{
+    width: 100%;
+    height: 1050px;
+    background: #EEEEEE;
+    text-align: center;
+}
+
+.menu p{
+    color: #25b976;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+}
+
+.menu h2{
+    color: #202B5B;
+    padding-bottom: 10px;
+}
+
+.menu .menu-cards{
+    width: 80%;
+    height: 680px;
+    background: #EEEEEE;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-cards .card1{
+    width: calc(80% / 4);
+    height: 330px; 
+    margin-left: 35px;
+}
+
+.card1 .img{
+    width: 210px;
+    height: 150px;
+    background-image: url(../img/pizza-detailjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-left: 5px;
+    position: relative;
+}
+
+.card1 .burger{
+    background-image: url(../img/burrger.jpg);
+}
+.card1 .crep{
+    background-image: url(../img/crep.jpg);
+}
+.card1 .wafl{
+    background-image: url(../img/wafl.jpg);
+}
+.card1 .pancake{
+    background-image: url(../img/pancake.jpg);
+}
+.card1 .crema{
+    background-image: url(../img/crema.jpg);
+}
+.card1 .limonades{
+    background-image: url(../img/limonades.jpg);
+}
+.card1 .bowl{
+    background-image: url(../img/bowl.jpg);
+}
+.card1 .juice{
+    background-image: url(../img/juice.jpg);
+}
+
+.img i{
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    background:#F1EFF1;
+    margin-top: 9px;
+    margin-left: 62px; 
+    padding: 9px 9px;
+    font-size: 17px;
+    border-radius: 20px;
+    color: #202B5B;
+    text-align: right;
+    cursor: pointer;
+}
+
+.img i:hover{
+    background: #25b976;
+    color: white;
+}
+
+.food-detail{
+    width: 100%;
+    height: 150px;
+    background:#F7F7F7;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.food-detail i{
+    color: #25b976;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.food-detail span{
+    color: #202B5B;
+    font-size: 20px;
+    font-weight: 700;    
+}
+
+.food-detail p{
+    color: #202B5B;
+    font-size: 15px; 
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.food-detail button{
+    width: 130px;
+    height: 28px;
+    background: #202B5B;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    border:none;
+}
+.food-detail .price{
+    color: #25b976;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.customers-review{
+    width: 100%;
+    height: 400px;
+    background:#F7F7F7;
+    text-align: center; 
+    overflow-y: hidden;
+}
+
+.customers-review p{
+    color: #25b976;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+}
+.customers-review h2{
+    color: #202B5B;
+}
+
+.customers-review .reviews{
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; 
+    overflow-y: hidden;
+}
+
+.reviews .reviews-side{
+    color: rgb(248, 243, 243);
+    width: 400px;
+    height: 250px;
+    text-align: left;
+    box-shadow: 1px 1px 10px 1px rgb(194, 193, 193);
+    margin-left: 15px;  
+}
+
+.reviews-side p{
+    color: grey;
+    font-size: 15px;
+    line-height: 23px;
+    padding-left: 15px;
+    padding-top: 30px;
+}
+
+.reviews .customers{
+    width: 400px;
+    height: 50px; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.customers .comment-side{
+    width: 380px;
+    height: 30px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers .customer-detail{
+    width: 120px;
+    height: 50px; 
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: left;
+    margin-right: 110px;
+    margin-top: 12px;
+}
+
+.customer-detail span{
+    font-size: 18px;
+    font-weight: 600;
+    color: #202B5B;
+}
+.customer-detail .stars{
+    color: #25b976;
+    font-size: 11px;
+}
+.customers .comment{ 
+    font-size: 40px;
+    height: 50px;
+    margin-top: 12px;
+    color: rgb(121, 121, 119);
+}
+
+ .customers .image{
+    background-image: url(../img/customer1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+ }
+
+ .customers .customer2{
+    background-image: url(../img/customer4.jpg);
+ }
+
+ .customers .customer3{
+    background-image: url(../img/customer2.jpg);
+ }
+
+ .customers .customer4{
+    background-image: url(../img/customer3.jpg);
+ }
+ 
+.order{
+    width: 100%;
+    height: 650px;
+    background-color: #EEEEEE;
+}
+
+.order p{
+    color: #25b976;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0 5px 0;
+    text-align: center;
+}
+
+.order h2{
+    color: #202B5B;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.order .fast-order{
+    width: 790px;
+    height: 550px;
+    background:#F7F7F7;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.order .order-side{
+    width: 790px;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row; 
+}
+
+.order-details form{
+    width: 395px;
+    height: 480px; 
+    padding-top: 20px;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+form label{
+    width: 100px;
+    height: 50px; 
+    font-size: 15px;
+    padding-top: 70px;
+}
+
+form input{
+    background: #EEEEEE;
+    width: 370px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    text-indent: 5px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+form textarea{
+    width: 370px; 
+    height: 200px; 
+    background: #EEEEEE;
+    border-radius: 5px;
+    padding-top: 8px ;
+    padding-left: 5px;
+    border: none;
+}
+
+.fast-order button{
+    background: #202B5B;
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 350px;
+    background:#F7F7F7;    
+}
+
+.contact-side{
+    width: 80%;
+    height: 260px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-side .contact-details{
+    width: 300px;
+    height: 260px;
+    margin-top: 30px;
+    border-bottom: 2px solid rgb(150, 149, 149);
+}
+
+.contact-details .title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #202B5B;
+}
+
+.contact-details ul li{
+    font-size: 17px;
+    line-height: 30px;
+    color: black;
+    list-style-type: none;
+    font-weight:500;
+}
+
+footer p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+footer p span{
+    color: #25b976;
+}
+
