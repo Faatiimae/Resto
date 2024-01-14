@@ -29,4 +29,9 @@ This project was developed using the following technologies
 
 
 
-![There was a screenshot here](./Screenshot1.png)
+![There was a screenshot here](./screen1.png)
+![There was a screenshot here](./sc2.png)
+![There was a screenshot here](./sc3.png)
+![There was a screenshot here](./sc4.png)
+![There was a screenshot here](./sc5.png)
+![There was a screenshot here](./sc6.png)
