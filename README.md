@@ -26,3 +26,7 @@ This project was developed using the following technologies
 | 2 | CSS |  Make-up of the established skeleton |
 | 3 | GIT |  Project version control management |
 | 4 | VSCode | Text editor used in the project |
+
+
+
+![There was a screenshot here](./Screenshot1.png)
